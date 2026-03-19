@@ -8,7 +8,14 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 
 public class Film {
-
+    /** Clase que interactua con las películas, incluyendo métodos
+     * las registra asociandole un id pidiendo Titulo y precio
+     * obtiene información y llama a método para borrarlas
+     * @param String del título
+     * @param double del precio
+     * @param int que será un id representativo
+     * @author HatemHamdi.
+     */
 	private int id,id_r;
 	private String titre;
 	private double prix;
@@ -36,7 +43,15 @@ public class Film {
 	public void setPrix(double prix) {
 		this.prix = prix;
 	}
-	
+
+    /**
+     * @param titre título de la película
+     * @param prix precio asignado
+     * @param id_r id representativo
+     * @param type género de la película
+     * Método que añade la película a la base de datos
+     * @author HatemHamdi
+     */
 	public void insert(String titre,double prix,int id_r, String type)
 	{
 		Statement stm;
@@ -57,7 +72,13 @@ public class Film {
 			e.printStackTrace();
 		}
 	}
-	
+
+    /**
+     *
+     * @param titre título de la película
+     * @param id representativo
+     * Método que se encarga de borrar las películas de la base de datos
+     */
 	public void sup_film(String titre,int id)
 	{
 		Statement stm;
@@ -75,7 +96,11 @@ public class Film {
 		}
 		
 	}
-	
+
+    /**
+     * Método que busca la información de la base de datos sobre una película concreta
+     * @return Devuelve toda la información con respecto a una película concreta
+     */
 	public ResultSet select()
 	{
 		Statement stm;

@@ -69,6 +69,10 @@ import javax.swing.SwingConstants;
 import java.awt.Color;
 import javax.swing.UIManager;
 
+/**
+ * Clase que da el entorno visual para agregar películas para el usuario
+ *
+ */
 public class Ajouter_Film extends JFrame {
 
 	private JPanel contentPane;

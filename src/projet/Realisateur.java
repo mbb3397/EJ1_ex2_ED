@@ -8,8 +8,12 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 
 public class Realisateur {
-	
-	
+
+    /** Clase que interactua con el usuario, incluyendo métodos
+     * lo registra asociandole un id pidiendo nombre y apellidos
+     * obtiene información y lo borra.
+     * @author HatemHamdi
+     */
 	
 	private int id;
 	private String nom;
@@ -70,8 +74,13 @@ public class Realisateur {
 		}
 		return 0;
 	}
-	
-	public int get_id(){
+
+    /**
+     * Metodo que obtiene el id del realisateur
+     * @return id del realisateur
+     * @author HatemHamdi
+     */
+    public int get_id(){
 		Statement stm;
 		try {
 			stm = Main.connection.createStatement();
@@ -83,7 +92,12 @@ public class Realisateur {
 		}
 		return 0;
 	}
-	
+
+    /**
+     * Método que parece interactuar con una base de datos con el comando SELECT para obtener la información del realisateur.
+     * @author HatemHamdi
+     * @return
+     */
 	public ResultSet select()
 	{
 		Statement stm;
@@ -98,6 +112,13 @@ public class Realisateur {
 		
 		return(null);
 	}
+
+    /**
+     * Método que borra al usuario de la base de datos.
+     * @param nom Nombre del usuario
+     * @param prenom Apellido del usuario
+     *  @author HatemHamdi
+     */
 	public void sup_rel(String nom,String prenom)
 	{
 		this.setNom(nom);

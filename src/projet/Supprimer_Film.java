@@ -23,6 +23,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.StringTokenizer;
 
+/**
+ *  Clase creada para interactuar con disposición de películas, tratará de una
+ *  interfaz visual en la que se verán las distintas películas a disposición para poder interactuar
+ *  con ellas para poder borrarlas en caso que sea necesario.
+ */
 public class Supprimer_Film extends JFrame {
 
 	private JPanel contentPane;
@@ -41,6 +46,9 @@ public class Supprimer_Film extends JFrame {
 		});
 	}
 
+    /**
+     * Método que visualiza las películas con la finalidad de borrarlas para el usuario
+     */
 	public Supprimer_Film() {
 		this.setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

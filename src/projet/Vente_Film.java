@@ -32,6 +32,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
 
+/**
+ * Clase creada para interactuar con la venta de películas, tratará de una
+ * interfaz visual en la que se verán las distintas películas a la venta para poder interactuar
+ * con ellas para venderlas.
+ * @author HatemHamdi
+ */
 public class Vente_Film extends JFrame {
 
 	private JPanel contentPane;
@@ -43,6 +49,10 @@ public class Vente_Film extends JFrame {
 	DefaultTableModel model_facture;
 	double somme=0;
 
+    /**
+     * Excepción en la clase de ventas
+     * @param args
+     */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -57,12 +67,12 @@ public class Vente_Film extends JFrame {
 		});
 	}
 
+    /**
+     * Método que visualiza las películas a la venta
+     */
 	
 	public Vente_Film() {
-		
-		
-		
-		
+
 		
 		this.setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

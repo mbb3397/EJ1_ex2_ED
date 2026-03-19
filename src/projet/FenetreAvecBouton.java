@@ -8,7 +8,8 @@ import javax.swing.JButton;
 
 public class FenetreAvecBouton extends JFrame{
 	/**
-	 * 
+	 * MÃ©todo que visualiza botones para guiar al usuario
+     * @author HatemHamdi
 	 */
 	
 
@@ -19,7 +20,7 @@ public class FenetreAvecBouton extends JFrame{
 		JButton bouton = new JButton("Cliquez ici !");
 		panel.add(bouton);
  
-		JButton bouton2 = new JButton("Ou là !");
+		JButton bouton2 = new JButton("Ou lï¿½ !");
 		panel.add(bouton2);
  
 		return panel;

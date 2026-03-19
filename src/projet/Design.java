@@ -29,6 +29,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.StringTokenizer;
 
+/**
+ * Clase que da la visual al proyecto donde se encuentran los diseños y el uso de distintas imágenes.
+ * @author HatemHamdi
+ */
 public class Design extends JFrame {
 
 	private JPanel contentPane;

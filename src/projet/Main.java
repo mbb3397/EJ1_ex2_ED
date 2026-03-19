@@ -8,7 +8,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class Main {
-
+    /** Método principal del programa que es utilizado pala establecer conexión.
+     * @author HatemHamdi
+     */
 	public static Connection connection = null;
 	public static Connection connect()
 	{
